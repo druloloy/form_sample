@@ -107,7 +107,7 @@
                </div>
             </div>
         </div>
-        <form onsubmit="submit()">
+        <form>
             <input type="text" placeholder="Name" />
             <input type="submit" value="Submit" />
         </form>
@@ -122,6 +122,8 @@
 
                 alert("Submitted!");
             }
+
+            document.querySelector("form").addEventListener("submit", submit);
         </script>
     </main>
 
