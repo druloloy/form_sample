@@ -113,7 +113,8 @@
         </form>
         
         <script>
-            function submit(){
+            function submit(e){
+                e.preventDefault();
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
                     event: "custom_form_submit"
